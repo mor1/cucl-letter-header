@@ -47,6 +47,7 @@
 \typeout{Times New Roman font version (e.g. for Mac's with MSFT Office)}
 
 \usepackage{url}
+\usepackage[absolute]{textpos}
 
 %% fonts
 \usepackage[T1]{fontenc}
@@ -140,7 +141,7 @@
 }
 
 \newcommand{\ComputerLaboratory}{
-  \fontsize{14pt}{14pt}\bf Computer\hfill Laboratory
+  \fontsize{14pt}{14pt}\bf Computer Laboratory
 }
 
 \newcommand{\titledetails}{}
@@ -149,21 +150,19 @@
 }
 
 \newcommand{\dolettertop}{%
-  \setlength{\unitlength}{1mm}
-  \begin{picture}(160,60)(0,0)
-    \put(0,40){
-      \makebox(160,20)[tl]{
-        \parbox{\textwidth}{
-          \bf\fromnamedetails\fromquoldetails\\\it\fromjobdetails}
-      }
-    }
-    \put(0,0){
-      \makebox(100,15)[tl]{
-        \begin{tabular}{@{}p{90mm}@{}}\addressdetails\end{tabular}}
-    }
-    \put(0,36){\makebox(160,24.5)[tr]{\cuarms}}
-    \put(0,35){\makebox(160,24.5)[br]{\parbox{136pt}{\ComputerLaboratory}}}
-  \end{picture}
+  \begin{textblock*}{\paperwidth}(25mm,13mm)
+    \bf\fromnamedetails\fromquoldetails\\\it\fromjobdetails
+  \end{textblock*}
+  \begin{textblock*}{\paperwidth}(124mm,13mm)
+    \includegraphics{CUni3.eps}
+  \end{textblock*}
+  \begin{textblock*}{\paperwidth}(136.5mm,28mm)
+    \ComputerLaboratory
+  \end{textblock*}
+
+  \parbox[t][20mm][s]{\textwidth}{}
+
+  \addressdetails
 
   \datedetails
 
@@ -171,9 +170,11 @@
 
   \thispagestyle{empty}%
   \enlargethispage{10mm}%
-  \begin{figure}[b!]\swmfoot\end{figure}
+  \begin{figure}[b!]
+    \swmfoot
+  \end{figure}
 
-    \greetingdetails
+  \greetingdetails
 }
 
 \renewcommand{\footnoterule}{}
@@ -190,7 +191,7 @@
   Tel: & \fromphonedetails\\
   Fax: & \fromfaxdetails\\
   E-mail: & \fromemaildetails\\
-  \end{tabular}%\let\@oddfoot\@empty
+  \end{tabular}
 }
 
 
