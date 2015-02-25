@@ -87,10 +87,10 @@
     \vspace*{1em}cc:~~\begin{minipage}[t]{100mm}#1\end{minipage}
 }}
 
-\newcommand{\cuarms}{\includegraphics{CUni3.eps}}
+\newcommand{\cuarms}{\includegraphics{figures/CUni3.eps}}
 \newcommand{\bwarms}{
   \typeout{Using B&W version of the arms}
-  \renewcommand{\cuarms}{\includegraphics{BWUni3.eps}}
+  \renewcommand{\cuarms}{\includegraphics{figures/BWUni3.eps}}
 }
 
 \newcommand{\ComputerLaboratory}{
@@ -107,7 +107,7 @@
     \bf\fromnamedetails\fromquoldetails\\\it\fromjobdetails
   \end{textblock*}
   \begin{textblock*}{\paperwidth}(124mm,13mm)
-    \includegraphics{CUni3.eps}
+    \includegraphics{figures/CUni3.eps}
   \end{textblock*}
   \begin{textblock*}{\paperwidth}(136.5mm,28mm)
     \ComputerLaboratory
