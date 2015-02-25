@@ -1,0 +1,11 @@
+\documentclass{lablet98times}
+
+\begin{document}
+
+\fromwhom{Richard~Mortier}{~Ph.D.}
+         {University Lecturer}{richard.mortier@cl.cam.ac.uk}
+         {+44 1223 334419}{+44 1223 334678}
+
+$body$
+
+\end{document}
