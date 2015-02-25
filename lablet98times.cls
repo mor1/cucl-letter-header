@@ -120,7 +120,7 @@
 \newcommand{\reference}[1]{\renewcommand{\referencedetails}{#1}}
 
 \newcommand{\datedetails}{\today}
-\newcommand{\setdate}[1]{\renewcommand{\datedetails}{#1}}
+\renewcommand{\date}[1]{\renewcommand{\datedetails}{#1}}
 
 \newcommand{\signeddetails}{\fromnamedetails}
 \newcommand{\setsigned}[2]{
