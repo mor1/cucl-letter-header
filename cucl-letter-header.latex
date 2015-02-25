@@ -57,7 +57,7 @@
 }
 
 \newcommand{\addressdetails}{
-  \towhomname\\
+  \towhomname\par
   \towhomaddress
 }
 
@@ -115,7 +115,7 @@
 
   \parbox[t][20mm][s]{\textwidth}{}
 
-  \addressdetails
+  \parbox[t][20mm][s]{0.4\textwidth}{\addressdetails}
 
   \datedetails
 
@@ -138,7 +138,7 @@
   \multicolumn{2}{@{}l@{}}{Computer Laboratory}\\
   \multicolumn{2}{@{}l@{}}{William Gates Building}\\
   \multicolumn{2}{@{}l@{}}{JJ Thompson Avenue}\\
-  \multicolumn{2}{@{}l@{}}{Cambridge~~~CB3 0FG}\\
+  \multicolumn{2}{@{}l@{}}{Cambridge~~~CB3 0FD}\\
   \multicolumn{2}{@{}l@{}}{U.K.}\\
   & \\
   Tel: & \fromphonedetails\\
