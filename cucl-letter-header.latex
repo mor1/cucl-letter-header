@@ -113,7 +113,7 @@
     \ComputerLaboratory
   \end{textblock*}
 
-  \parbox[t][20mm][s]{\textwidth}{}
+  \parbox[t][12mm][s]{\textwidth}{}
 
   \parbox[t][20mm][s]{0.4\textwidth}{\addressdetails}
 
